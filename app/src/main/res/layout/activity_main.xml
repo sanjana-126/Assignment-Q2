@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/body">
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fill_correct_details"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_below="@+id/textview"
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="#FF0000"
+            android:textColorHint="#FF0000"
+            android:textSize="18sp"
+            android:backgroundTint="#FF0000"/>
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fname"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/last_name"
+            android:padding="10dp"
+            android:textColor="#FF0000"
+            android:textColorHint="#FF0000"
+            android:backgroundTint="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lname"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textview_bg"
+            android:padding="5dp"
+            android:text="@string/select_your_choice"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/checkboxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF0000"
+                android:onClick="isCBselected"
+                android:text="@string/kotlin"
+                android:textColor="#FF0000"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF0000"
+                android:onClick="isCBselected"
+                android:text="@string/java"
+                android:textColor="#FF0000"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF0000"
+                android:onClick="isCBselected"
+                android:text="@string/c"
+                android:textColor="#FF0000"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF0000"
+                android:onClick="isCBselected"
+                android:text="@string/python"
+                android:textColor="#FF0000"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_your_gender"
+            android:layout_below="@+id/checkboxes"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:background="@drawable/textview_bg"/>
+
+        <RadioGroup
+            android:id="@+id/radiobuttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview2"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/radiobutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF0000"
+                android:onClick="isRBselected"
+                android:text="@string/male"
+                android:textColor="#FF0000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radiobutton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF0000"
+                android:onClick="isRBselected"
+                android:text="@string/female"
+                android:textColor="#FF0000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radiobutton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF0000"
+                android:onClick="isRBselected"
+                android:text="@string/other"
+                android:textColor="#FF0000"
+                android:textSize="18sp" />
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mSubmit"
+            android:text="@string/submit"
+            android:layout_below="@+id/radiobuttons"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:backgroundTint="#FF0000"/>
+    </RelativeLayout>
+</RelativeLayout>

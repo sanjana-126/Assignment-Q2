@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AssignmentQ2</string>
+    <string name="select_your_choice">Select your choice</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="c">C++</string>
+    <string name="python">Python</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="select_your_gender">Select your gender</string>
+    <string name="submit">submit</string>
+    <string name="other">Other</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="fill_correct_details">Fill correct details</string>
+</resources>
